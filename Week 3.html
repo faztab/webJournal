@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coding with If Else Statements</title>
+    <style>
+        body {
+            background-color: #3b3b3b;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        .navbar {
+            background: #3b3b3b;
+            padding: 10px;
+            box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+        }
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .navbar ul li {
+            margin: 0 10px;
+        }
+        .navbar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.5s;
+        }
+        .navbar ul li a:hover {
+            color: #FFCB74;
+        }
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            animation: fade-in 1s ease-in-out;
+        }
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            animation: slide-up 1s ease-in-out;
+        }
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            animation: fade-in 1s ease-in-out;
+        }
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+            animation: slide-up 1s ease-in-out;
+        }
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ffffff;
+        }
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        @keyframes slide-up {
+            0% {
+                transform: translateY(20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Week 1.html">Week 1</a></li>
+            <li><a href="Week 2.html">Week 2</a></li>
+            <li><a href="Week 3.html">Week 3</a></li>
+            <li><a href="Week 4.html">Week 4</a></li>
+            <li><a href="Week 5.html">Week 5</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Coding with If Else Statements</h1>
+        <div style="background-color: #050206; padding: 20px;">
+            <h2>If Else Statements</h2>
+            <p>
+                Summary:<br>
+                If-else statements in JavaScript are used to make decisions in our code. They allow us to execute different blocks of code based on certain conditions. If a condition is true, the code inside the if block is executed. If the condition is false, the code inside the else block (if present) is executed.
+            </p>
+            <h2>Example</h2>
+            <p>
+                <strong>Example:</strong><br>
+                let num = 10;<br>
+                if (num > 0) {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log("The number is positive.");<br>
+                } else {<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;console.log("The number is non-positive.");<br>
+                }<br>
+                <em>In this example, the if-else statement checks if the value of the variable num is greater than 0. If it is, the code inside the if block is executed, resulting in the message "The number is positive." being printed to the console. If the condition is false, the code inside the else block is executed, resulting in the message "The number is non-positive." being printed to the console.</em>
+            </p>
+            <h2>Analogy</h2>
+            <p>
+                Think of if-else statements like making decisions. Just as you might check the weather before going outside, in JavaScript, if-else statements allow you to check conditions and execute different blocks of code based on those conditions.
+            </p>
+            <h2>Misconception</h2>
+            <p>
+                A common misconception is that if-else statements can only have one condition. However, you can have multiple conditions using else if statements, allowing for more complex decision-making in your code.
+            </p>
+            <h2>Comprehension Check</h2>
+            <table>
+                <tr>
+                    <th>Question</th>
+                    <th>Answer</th>
+                </tr>
+                <tr>
+                    <td>What are if-else statements used for in JavaScript?</td>
+                    <td>If-else statements are used to make decisions in our code by executing different blocks of code based on certain conditions.</td>
+                </tr>
+                <tr>
+                    <td>Give an example of an if-else statement in JavaScript.</td>
+                    <td>In the example provided, the if-else statement checks if the value of the variable num is greater than 0.</td>
+                </tr>
+                <tr>
+                    <td>Can if-else statements have multiple conditions?</td>
+                    <td>Yes, if-else statements can have multiple conditions using else if statements, allowing for more complex decision-making.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

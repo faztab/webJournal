@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Variable Operators</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css">
+    
+    
+    <style>
+
+        body {
+            background-color: #3b3b3b;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar {
+            background: #3b3b3b;
+            padding: 10px;
+            box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+        }
+        
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar ul li {
+            margin: 0 10px;
+        }
+        
+        .navbar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.5s;
+        }
+        
+        .navbar ul li a:hover {
+            color: #FFCB74;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+        }
+        
+        h1 .icon {
+            font-size: 24px;
+            margin-right: 10px;
+            color: #c252ff;
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            animation: slide-in-top 1s ease-in-out;
+        }
+        
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            animation: slide-in-top 1s ease-in-out;
+        }
+        
+        .box {
+            background-color: #050206;
+            padding: 20px;
+            margin-top: 20px;
+            animation: slide-in-bottom 1s ease-in-out;
+        }
+        
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 20px;
+            animation: fade-in 1s ease-in-out;
+        }
+        
+        table {
+            margin-top: 20px;
+            width: 100%;
+            border-collapse: collapse;
+            animation: slide-in-bottom 1s ease-in-out;
+        }
+        
+        th, td {
+            padding: 10px;
+            text-align: left;
+            border-bottom: 1px solid #ffffff;
+        }
+        
+        @keyframes slide-in-top {
+            0% {
+                transform: translateY(-100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slide-in-bottom {
+            0% {
+                transform: translateY(100px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+        
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Week 1.html">Week 1</a></li>
+            <li><a href="Week 2.html">Week 2</a></li>
+            <li><a href="Week 3.html">Week 3</a></li>
+            <li><a href="Week 4.html">Week 4</a></li>
+            <li><a href="Week 5.html">Week 5</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1 class="animate-slide-in-top">
+            <i class="fab fa-js-square fa-fade icon" style="color: #c252ff;"></i>
+            Variable Operators
+        </h1>
+        
+        <div class="box animate-slide-in-bottom">
+            <h2>Summary</h2>
+            <p>
+                Variable operators in JavaScript allow us to perform operations on variables. These operators include assignment, arithmetic, comparison, logical, and more. They help us manipulate and combine variable values.
+            </p>
+            
+            <h2>Example</h2>
+            
+            <h3>Assignment Operator</h3>
+            <pre><code class="javascript">
+let x = 5;
+            </code></pre>
+            <p>
+                This example uses the assignment operator (=) to assign the value 5 to the variable x.
+            </p>
+            
+            <h3>Arithmetic Operator</h3>
+            <pre><code class="javascript">
+let y = 10 + 2;
+            </code></pre>
+            <p>
+                This example uses the arithmetic operator (+) to add the values 10 and 2, and assigns the result (12) to the variable y.
+            </p>
+            
+            <h2>Analogy</h2>
+            <p>
+                Think of variable operators like tools in a toolbox. Each operator has a specific function and helps you perform different tasks. Just as you use a hammer to drive a nail or a wrench to tighten a bolt, in JavaScript, you use variable operators to manipulate and work with variable values.
+            </p>
+            
+            <h2>Misconception</h2>
+            <p>
+                A common misconception is that the assignment operator (=) is used for comparison. However, the assignment operator is used to assign a value to a variable, whereas comparison operators (e.g., ==, ===, <, >) are used for comparisons.
+            </p>
+        </div>
+        
+        <div class="box animate-slide-in-bottom">
+            <h2>Comprehension Check</h2>
+            <table>
+                <tr>
+                    <th>Question</th>
+                    <th>Answer</th>
+                </tr>
+                <tr>
+                    <td>What are variable operators used for in JavaScript?</td>
+                    <td>Variable operators are used to perform operations on variables, manipulating and combining their values.</td>
+                </tr>
+                <tr>
+                    <td>Give an example of an arithmetic operator in JavaScript.</td>
+                    <td>The addition operator (+) adds two values together.</td>
+                </tr>
+                <tr>
+                    <td>What does the assignment operator (=) do in JavaScript?</td>
+                    <td>The assignment operator assigns a value to a variable.</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+</body>
+</html>

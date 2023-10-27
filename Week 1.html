@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Coding with Dot Notation</title>
+    <style>
+        body {
+            background-color: #3b3b3b;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            flex-direction: column;
+        }
+        
+        .navbar {
+            background: #3b3b3b;
+            padding: 10px;
+            box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+        }
+        
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .navbar ul li {
+            margin: 0 10px;
+        }
+        
+        .navbar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.5s;
+        }
+        
+        .navbar ul li a:hover {
+            color: #FFCB74;
+        }
+        
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            animation: fade-in 1s ease-in-out;
+        }
+        
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            animation: slide-up 1s ease-in-out;
+        }
+        
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            animation: fade-in 1s ease-in-out;
+        }
+        
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+            animation: slide-up 1s ease-in-out;
+        }
+        
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ffffff;
+        }
+        
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes slide-up {
+            0% {
+                transform: translateY(20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Week 1.html">Week 1</a></li>
+            <li><a href="Week 2.html">Week 2</a></li>
+            <li><a href="Week 3.html">Week 3</a></li>
+            <li><a href="Week 4.html">Week 4</a></li>
+            <li><a href="Week 5.html">Week 5</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Coding with Dot Notation</h1>
+        <div style="background-color: #050206; padding: 20px;">
+            <h2>Dot Notation</h2>
+            <p>
+                Explanation:<br>
+                Dot notation is used in programming to access the properties or methods of an object. It involves specifying the object, followed by a dot, and then the property or method that you want to access. This allows you to retrieve or set the value of specific properties, or perform actions using the methods, of an object.
+            </p>
+            
+            <h2>Examples</h2>
+            <p>
+                <strong>Example 1:</strong> person.name<br>
+                <em>Accesses the name property of the person object.</em>
+            </p>
+            
+            <p>
+                <strong>Example 2:</strong> person.age = 25<br>
+                <em>Sets the value of the age property of the person object to 25.</em>
+            </p>
+            
+            <h2>Analogy</h2>
+            <p>
+                Think of dot notation like addressing a letter. The object is the recipient, and the property or method is the specific information/action you want to communicate. Just as you write the recipient's name followed by a dot and specific information on the envelope, in programming, you specify the object followed by a dot and the property/method you want to access.
+            </p>
+            
+            <h2>Misconception</h2>
+            <p>
+                A common misconception is that dot notation can be used with any data type, but it is specific to objects. Dot notation is used to access object properties and methods, not primitive data types like numbers or strings.
+            </p>
+            
+            <h2>Comprehension Check</h2>
+            <table>
+                <tr>
+                    <th>Question</th>
+                    <th>Answer</th>
+                </tr>
+                <tr>
+                    <td>How is dot notation used in programming?</td>
+                    <td>Dot notation is used to access the properties or methods of an object in programming.</td>
+                </tr>
+                <tr>
+                    <td>Can dot notation be used with primitive data types?</td>
+                    <td>No, dot notation is specific to accessing properties and methods of objects, not primitive data types.</td>
+                </tr>
+                <tr>
+                    <td>Give an example of dot notation.</td>
+                    <td>person.name is an example of dot notation, where person is the object and name is the property being accessed.</td>
+                </tr>
+            </table>
+            
+            <h2>Additional Subheading</h2>
+            <p>
+                Add your additional subheading content here.
+            </p>
+        </div>
+    </div>
+</body>
+</html>
