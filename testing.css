@@ -71,3 +71,42 @@ nav ul li:hover::after {
 .navbar:hover {
     color: #FFCB74;
 }
+
+
+/* Additional CSS styles for the nav bar */
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+nav {
+    background-color: #3b3b3b;
+    padding: 10px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+}
+
+ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    margin: 0 10px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.5s;
+}
+
+a:hover {
+    color: #FFCB74;
+}

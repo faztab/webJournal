@@ -11,12 +11,12 @@
             padding: 0;
         }
 
-         .navbar {
+        .navbar {
             background: #3b3b3b;
             padding: 10px;
             box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
         }
-        
+
         .navbar ul {
             display: flex;
             justify-content: center;
@@ -24,61 +24,64 @@
             margin: 0;
             padding: 0;
         }
-        
+
         .navbar ul li {
             margin: 0 10px;
         }
-        
+
         .navbar ul li a {
             color: #ffffff;
             text-decoration: none;
             font-weight: bold;
             transition: color 0.5s;
         }
-        
+
         .navbar ul li a:hover {
             color: #FFCB74;
         }
-        
+
         .container {
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 100vh;
+            min-height: 100vh;
             flex-direction: column;
         }
-        
+
         h1 {
             font-size: 40px;
+            margin: 0;
             margin-bottom: 20px;
             animation: fade-in 1s ease-in-out;
         }
-        
+
         h2 {
             font-size: 24px;
+            margin: 0;
             margin-bottom: 10px;
             animation: slide-up 1s ease-in-out;
         }
-        
+
         p {
             font-size: 16px;
             line-height: 1.5;
+            margin: 0;
             animation: fade-in 1s ease-in-out;
         }
-        
+
         table {
             margin-top: 20px;
             border-collapse: collapse;
             width: 100%;
             animation: slide-up 1s ease-in-out;
         }
-        
+
         th, td {
             padding: 8px;
             text-align: left;
             border-bottom: 1px solid #ffffff;
         }
-        
+
         @keyframes fade-in {
             0% {
                 opacity: 0;
@@ -87,7 +90,7 @@
                 opacity: 1;
             }
         }
-        
+
         @keyframes slide-up {
             0% {
                 transform: translateY(20px);
@@ -102,18 +105,15 @@
     <div class="navbar">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="Week 1.html">Week 1</a></li>
-            <li><a href="Week 2.html">Week 2</a></li>
-            <li><a href="Week 3.html">Week 3</a></li>
-            <li><a href="Week 4.html">Week 4</a></li>
-            <li><a href="Week 5.html">Week 5</a></li>
+            <li><a href="week1.html">Week 1</a></li>
+            <li><a href="week2.html">Week 2</a></li>
+            <li><a href="week3.html">Week 3</a></li>
+            <li><a href="week4.html">Week 4</a></li>
+            <li><a href="week5.html">Week 5</a></li>
         </ul>
-       
-    </style>
-</head>
-<body>
+    </div>
     <div class="container">
-        <h1>Coding:Loops</h1>
+        <h1>Loops</h1>
         <div style="background-color: #050206; padding: 20px;">
             <h2>Loops</h2>
             <p>
@@ -125,16 +125,18 @@
             </p>
             <h2>Examples</h2>
             <p>
-                <strong>Example 1:</strong> for (int i = 0; i < 5; i++) {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;System.out.println("Hello!");<br>
-                }<br>
+                <strong>Example 1:</strong>
+                <pre><code>for (int i = 0; i < 5; i++) {
+    System.out.println("Hello!");
+}</code></pre>
                 <em>This example demonstrates a for loop that prints "Hello!" five times. The loop starts with an initialization of the control variable i with a value of 0. The condition i < 5 is checked before each iteration, and as long as it is true, the instruction System.out.println("Hello!"); is executed. After each iteration, the control variable i is incremented by 1.</em>
             </p>
             <p>
-                <strong>Example 2:</strong> int[] numbers = {1, 2, 3, 4, 5};<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;for (int i = 0; i < numbers.length; i++) {<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;System.out.println(numbers[i]);<br>
-                &nbsp;&nbsp;&nbsp;&nbsp;}<br>
+                <strong>Example 2:</strong>
+                <pre><code>int[] numbers = {1, 2, 3, 4, 5};
+for (int i = 0; i < numbers.length; i++) {
+    System.out.println(numbers[i]);
+}</code></pre>
                 <em>This example demonstrates a for loop that iterates over an array called numbers and prints each element. The loop starts with an initialization of the control variable i with a value of 0. The condition i < numbers.length checks if the current index is within the bounds of the array. The instruction System.out.println(numbers[i]); prints the element at the current index. After each iteration, the control variable i is incremented by 1.</em>
             </p>
             <h2>Analogy</h2>
