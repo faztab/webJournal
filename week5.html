@@ -110,15 +110,24 @@
             <li><a href="week3.html">Week 3</a></li>
             <li><a href="week4.html">Week 4</a></li>
             <li><a href="week5.html">Week 5</a></li>
+            <li><a href="week6.html">Week 6</a></li>
         </ul>
     </div>
     <div class="container">
-        <h1>Loops</h1>
+        <h1>JavaScript Engine and High Function Commands</h1>
         <div style="background-color: #050206; padding: 20px;">
             <h2>Summary</h2>
             <p>
                 Explanation:<br>
-                A loop is a programming construct that allows you to repeat a set of instructions multiple times. It is a powerful tool for automating repetitive tasks and iterating over collections of data. There are different types of loops, but they all follow the same basic structure: a condition that is evaluated before each iteration, and a set of instructions that are executed repeatedly until the condition becomes false.
+                A JavaScript engine is a program that executes JavaScript code. It takes in JavaScript code as input and then runs it, interpreting and executing the instructions. One important concept in JavaScript execution is the idea of execution contexts. Execution contexts can be thought of as containers that hold all the necessary information for the engine to execute the code. There are two types of execution contexts: global execution context and local execution context.
+
+
+                The global execution context is created when the JavaScript engine starts running the code. It represents the global scope of the code, meaning it contains all the variables, functions, and objects that are accessible throughout the entire code. The global execution context has a global memory which stores all the variables and their values.
+                
+                
+                On the other hand, local execution contexts are created when functions are invoked or executed. Each time a function is called, a new local execution context is created. Local execution contexts have their own local memory which stores the variables and their values specific to that function. When a function is done executing, its local execution context is destroyed.
+                
+                
             </p>
             <p>
                 The most common type of loop is the "for" loop. It consists of three parts: initialization, condition, and increment/decrement. The initialization is where you set the initial value of a control variable. The condition is checked before each iteration, and if it evaluates to true, the instructions inside the loop are executed. After each iteration, the control variable is incremented or decremented as specified in the increment/decrement part. This process continues until the condition becomes false.
@@ -126,26 +135,31 @@
             <h2>Examples</h2>
             <p>
                 <strong>Example 1:</strong>
-                <pre><code>for (int i = 0; i < 5; i++) {
-    System.out.println("Hello!");
-}</code></pre>
-                <em>This example demonstrates a for loop that prints "Hello!" five times. The loop starts with an initialization of the control variable i with a value of 0. The condition i < 5 is checked before each iteration, and as long as it is true, the instruction System.out.println("Hello!"); is executed. After each iteration, the control variable i is incremented by 1.</em>
+                <pre><code>```javascript function greet() {	
+                    var name = "John";	
+                    console.log("Hello, " + name);	
+                    }
+</code></pre>
+                <em>In this example, we have a function calledgreet()that logs a greeting message to the console. Inside the function, there is a variablenamewhich is assigned the value "John". When the function is called, a new local execution context is created. The local memory of this execution context will contain the variablename``` with the value "John". The code inside the function is then executed, and the greeting message "Hello, John" is logged to the console. After the function finishes executing, its local execution context is destroyed. |</em>
             </p>
             <p>
                 <strong>Example 2:</strong>
-                <pre><code>int[] numbers = {1, 2, 3, 4, 5};
-for (int i = 0; i < numbers.length; i++) {
-    System.out.println(numbers[i]);
-}</code></pre>
-                <em>This example demonstrates a for loop that iterates over an array called numbers and prints each element. The loop starts with an initialization of the control variable i with a value of 0. The condition i < numbers.length checks if the current index is within the bounds of the array. The instruction System.out.println(numbers[i]); prints the element at the current index. After each iteration, the control variable i is incremented by 1.</em>
+                <pre><code>```javascript var age = 25;	
+
+                    function getAge() {
+                    console.log(age);
+                    }
+                    
+                    </code></pre>
+                <em>In this example, we have a variableagethat is declared in the global scope with a value of 25. We also have a functiongetAge()that logs the value ofageto the console. When the function is called, a new local execution context is created. However, since the variableageis not declared inside the function, the JavaScript engine looks for the variable in its current execution context, which is the global execution context. It finds the variableage``` in the global memory and logs its value, which is 25, to the console. After the function finishes executing, its local execution context is destroyed. </em>
             </p>
             <h2>Analogy</h2>
             <p>
-                Think of a loop like a conveyor belt that moves items along a production line. The loop condition acts as a quality control check that determines whether an item should continue down the line. If the condition is met, the instructions inside the loop are executed, just like the machinery that performs operations on the items. After each iteration, the loop control variable is updated, just like the conveyor belt moves the items to the next station. The loop continues as long as the condition is true, just like the conveyor belt keeps running as long as there are items to process.
+                Think of a JavaScript engine as a chef in a kitchen. The chef takes in a recipe, which is the JavaScript code, and executes it step by step. The chef needs a workspace to prepare and cook the food, which is the execution context. The kitchen itself can be seen as the global execution context, where the chef has access to all the ingredients and tools needed for the entire recipe. The chef also has individual workstations for each recipe step, which can be seen as the local execution contexts. These workstations have their own ingredients and tools specific to that step of the recipe.
             </p>
             <h2>Misconception</h2>
             <p>
-                A common misconception about loops is that they always run for a fixed number of times. While it is true that loops can be used for a predetermined number of iterations, they can also be used with conditions that depend on external factors or data. This allows loops to adapt to changing circumstances and handle different situations in a flexible manner. It is important to understand that the number of iterations can vary depending on the specific condition or data being used in the loop.
+                A common misconception is that variables declared inside a function are accessible in the global scope. In reality, variables declared inside a function are only accessible within that function's local execution context. They cannot be accessed outside of the function.
             </p>
             <h2>Comprehension Check</h2>
             <table>
@@ -154,16 +168,16 @@ for (int i = 0; i < numbers.length; i++) {
                     <th>Answer</th>
                 </tr>
                 <tr>
-                    <td>What is a loop?</td>
-                    <td>A loop is a programming construct that allows you to repeat a set of instructions multiple times.</td>
+                    <td>What is a JavaScript engine?</td>
+                    <td>A JavaScript engine is a program that executes JavaScript code.</td>
                 </tr>
                 <tr>
-                    <td>What are the three parts of a for loop?</td>
-                    <td>The three parts of a for loop are initialization, condition, and increment/decrement.</td>
+                    <td>What is the difference between global execution context and local execution context?</td>
+                    <td>The global execution context represents the global scope of the code and contains variables accessible throughout the entire code. Local execution contexts are created when functions are invoked and have their own local scope.</td>
                 </tr>
                 <tr>
-                    <td>Can loops run for a variable number of times?</td>
-                    <td>Yes, loops can run for a variable number of times depending on the condition or data being used in the loop.</td>
+                    <td>What happens to a local execution context after a function finishes executing?</td>
+                    <td>The local execution context is destroyed.</td>
                 </tr>
             </table>
         </div>

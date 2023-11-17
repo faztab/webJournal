@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Group Project</title>
+    <style>
+        body {
+            background-color: #3b3b3b;
+            color: #ffffff;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background: #3b3b3b;
+            padding: 10px;
+            box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+            position: sticky;
+            top: 0;
+            z-index: 999;
+        }
+
+        .navbar ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar ul li {
+            margin: 0 10px;
+        }
+
+        .navbar ul li a {
+            color: #ffffff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.5s;
+        }
+
+        .navbar ul li a:hover {
+            color: #FFCB74;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 20px;
+            animation: fade-in 1s ease-in-out;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 10px;
+            animation: slide-up 1s ease-in-out;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            animation: fade-in 1s ease-in-out;
+        }
+
+        table {
+            margin-top: 20px;
+            border-collapse: collapse;
+            width: 100%;
+            animation: slide-up 1s ease-in-out;
+        }
+
+        th, td {
+            padding: 8px;
+            text-align: left;
+            border-bottom: 1px solid #ffffff;
+        }
+
+        @keyframes fade-in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slide-up {
+            0% {
+                transform: translateY(20px);
+            }
+            100% {
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="week1.html">Week 1</a></li>
+            <li><a href="week2.html">Week 2</a></li>
+            <li><a href="week3.html">Week 3</a></li>
+            <li><a href="week4.html">Week 4</a></li>
+            <li><a href="week5.html">Week 5</a></li>
+            <li><a href="week6.html">Week 6</a></li>
+        </ul>
+    </div>
+    <div class="container">
+        <h1>Group Project with Others</h1>
+        <div style="background-color: #050206; padding: 20px; margin-top: 20px;">
+            <h2>Summary</h2>
+            <p>
+                Explanation:<br>
+                For our group project, we decided to create a game using JavaScript that works in the terminals. We designed the game in a way that the index file served as the main controller, handling the general game flow by calling different functions.
+
+
+                To ensure reusability and modularity, we utilized classes to set the properties and functions that could be accessed from anywhere in the code. For example, we created classes to manage the player's stats such as health, attack, defense, and name. These classes allowed us to easily access and modify these stats throughout the game.
+                
+                
+                One of the key components of our game was the inquiries file. It contained various functions that took input from the user and returned the result. These functions were extensively used in almost all of the other files, allowing us to gather user input and make decisions based on it.
+                
+                
+                In terms of organization, we made sure to separate different functionalities into separate functions. For example, we had a main combat loop function that handled the core of the combat system. Additionally, we created other functions that were regularly called upon, such as handling inventory management or displaying game menus.
+                
+                
+                Overall, our project went well, and we were able to create a functional game using JavaScript and branching. However, there were some challenges along the way. One difficulty we faced was ensuring proper communication between different files and functions. We had to carefully plan and test the flow of data to avoid any bugs or inconsistencies.
+                
+                
+                Another challenge was managing the complexity of the game. As the codebase grew, it became harder to keep track of all the different functions and their interactions. We had to spend extra time organizing and documenting our code to make it easier for others to understand and maintain.
+                
+                
+                In conclusion, our group project using JavaScript and branching was a success. We were able to create a game that worked in the terminals and had a clear flow of functions and classes. Despite some challenges, we learned a lot about teamwork and coding practices.
+            </p>
+          
+        </div>
+    </div>
+</body>
+</html>
